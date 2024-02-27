@@ -2,9 +2,9 @@
 channel: stable
 addons:
   loki:
-    repository: mdegat01/addon-loki
+    repository: pdecat/ha-addon-loki
     target: loki
-    image: ghcr.io/mdegat01/loki/{arch}
+    image: ghcr.io/pdecat/loki/{arch}
   promtail:
     repository: mdegat01/addon-promtail
     target: promtail
