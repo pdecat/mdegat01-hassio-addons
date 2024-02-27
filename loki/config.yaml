@@ -4,13 +4,13 @@ arch:
 - armv7
 - armhf
 codenotary: codenotary@degatano.com
-description: Loki for Home Assistant
-image: ghcr.io/mdegat01/loki/{arch}
+description: Loki for Home Assistant (fork)
+image: ghcr.io/pdecat/loki/{arch}
 init: false
 map:
 - share
 - ssl
-name: Loki
+name: Loki (fork)
 options:
   days_to_keep: 30
   log_level: info
@@ -29,6 +29,6 @@ schema:
   ssl: bool
 slug: loki
 startup: system
-url: https://github.com/mdegat01/addon-loki
-version: 1.11.2
+url: https://github.com/pdecat/ha-addon-loki
+version: 1.12.0
 watchdog: http://[HOST]:3101/ready
